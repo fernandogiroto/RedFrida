@@ -51,6 +51,33 @@ class Header_Block extends Widget_Base
     );
 
     $this->add_control(
+      'writer_text_first',
+      [
+        'label' => 'First Writer Text',
+        'type' => \Elementor\Controls_Manager::TEXT,
+        'default' => 'Example 01.'
+      ]
+    );
+
+    $this->add_control(
+      'writer_text_second',
+      [
+        'label' => 'Second Writer Text',
+        'type' => \Elementor\Controls_Manager::TEXT,
+        'default' => 'Example 02.'
+      ]
+    );
+
+    $this->add_control(
+      'writer_text_third',
+      [
+        'label' => 'Third Writer Text',
+        'type' => \Elementor\Controls_Manager::TEXT,
+        'default' => 'Example 03.'
+      ]
+    );
+
+    $this->add_control(
       'content',
       [
         'label' => 'Content Heading',
@@ -131,7 +158,10 @@ class Header_Block extends Widget_Base
         <div class="container pt-2 pt-md-5 pb-2 mb-5">
           <div class="row pb-5">
             <div class="col-12 col-md-5">
-              <h1 class="title pb-4 pt-5"><?php echo $settings['label_heading'] ?></h1>
+              <h1 class="title pb-4 pt-5"><?php echo $settings['label_heading'] ?> <span class="txt-rotate text-color" data-period="2000"
+                data-rotate='[ "<?php echo $settings['writer_text_first']?>", "<?php echo $settings['writer_text_second']?>", "<?php echo $settings['writer_text_third']?>" ]'>
+              </span>
+            </h1>
               <?php echo $settings['content'] ?>
               <div class="mt-5 mb-5 mb-md-0">
                 <?php
