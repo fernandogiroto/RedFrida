@@ -25,6 +25,11 @@
         <div class="col-3">
             <?php dynamic_sidebar('primary-sidebar'); ?>
         </div>
+        <div class="col-12 mt-5">
+        <?php comments_template();  ?>
+        </div>
     </div>
 </div>
+
+
 <?php get_footer(); ?>

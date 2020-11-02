@@ -16,6 +16,7 @@
 <!-- Back to top button -->
 <a id="button"></a>
 <nav class="navbar navbar-expand-lg navbar-light">
+  
   <?php
   // Get Custom Logo URL
   $custom_logo_id = get_theme_mod('custom_logo');
@@ -25,7 +26,7 @@
   <div class="container">
     <a class="navbar-brand title text-bg d-flex" href="<?php echo home_url() ?>" title=" <?php bloginfo('name'); ?>">
       <img src="<?php echo $custom_logo_url; ?>" width="20px">
-      <span class="align-self-end pl-2"> Red</span>
+      <span class="align-self-end pl-2 text-second"> Red</span>
       <span class="align-self-end text-second">Frida</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

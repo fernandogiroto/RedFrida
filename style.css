@@ -7,6 +7,30 @@ Author URI: https://www.fernandoportugal.com
 Version: 1.0
 */
 
+a:hover {
+  color: #fe4f5a !important;
+  text-decoration: none !important;
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+li a {
+  color: #313131;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+li a:hover {
+  color: #fe4f5a;
+  text-decoration: none;
+}
+
+
+
 /* BOOTSTRAP RESET */
 .dropdown-divider {
   height: 0;
@@ -336,6 +360,7 @@ header {
 label {
   display: inline-block !important;
   margin-bottom: 0.5rem !important;
+  width: 100%;
 }
 .input-submit{
   color: #fff;

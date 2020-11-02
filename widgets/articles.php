@@ -66,8 +66,8 @@ class Articles_Blog extends Widget_Base
             while (have_posts()) :
                 the_post();
         ?>
-                <div class="card mb-5">
-                    <a href="<?php echo the_permalink(); ?>"> <img class="card-img-top" src="<?php echo the_post_thumbnail_url('full'); ?>" style="height:450px" alt="Card image cap"></a>
+                <div class="card mb-5 shadow">
+                    <a href="<?php echo the_permalink(); ?>"> <img class="card-img-top" src="<?php echo the_post_thumbnail_url('full'); ?>" style="height:300px" alt="Card image cap"></a>
                     <div class="card-body">
                         <h5 class="card-title"><?php echo the_title(); ?> </h5>
                         <p class="card-text"><?php echo the_content(); ?></p>
